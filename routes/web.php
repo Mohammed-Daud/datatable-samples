@@ -23,3 +23,8 @@ Route::get('individual-column-searching', function () {
     $employees =  Employee::all();
     return view('individual_column_searching', compact('employees'));
 });
+
+Route::get('hide-default-search-input-and-addind-custom-search-box', function () {
+    $employees =  Employee::all();
+    return view('hide_default_search_input', compact('employees'));
+});

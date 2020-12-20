@@ -20,6 +20,11 @@
                 <ul class="dropdown-menu">
                     <li><a href="{{ url('/') }}">Simple Datatable</a></li>
                     <li><a href="{{ url('individual-column-searching') }}">Individual column searching (text inputs)</a></li>
+                    <li>
+                        <a href="{{ url('hide-default-search-input-and-addind-custom-search-box') }}">
+                            Hide Default Search Input and add custom search box
+                        </a>
+                    </li>
                     
                 </ul>
             </li>

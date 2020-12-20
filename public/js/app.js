@@ -26,3 +26,11 @@ $('#datatable-column-searching input#search-mobile').on('keyup change clear', fu
 $('#datatable-column-searching input#search-email').on('keyup change clear', function () {
     columnSearchingDatatable.columns(7).search(this.value).draw();
 });
+
+//to hide default searchbox but search feature is not disabled hence customised searchbox can be made.
+const defaultSeartcHiddenDatatable = $('#datatable-hide-default-search-input').DataTable({
+    "dom":"lrtip"
+});
+$('#dt-custom-name-search-input').on('keyup change clear', function () {
+    defaultSeartcHiddenDatatable.columns(1).search(this.value).draw();
+});
